@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Glitch Lore Stats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: one column, summary numbers first, then the views chart, then one row per Short. */
+:root {
+  --bg: #161830; --panel: #1f2244; --line: #343868; --fg: #fff4dc; --dim: #a9a9c9;
+  --cyan: #00e5ff; --mag: #ff2e88; --yel: #ffcc29;
+  --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 var(--body);
+  background-image: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 4px); }
+main { max-width: 980px; margin: 0 auto; padding: 28px 16px 56px; display: grid; gap: 28px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+h1 { font: 400 clamp(40px, 9vw, 72px)/1 var(--display); letter-spacing: .02em; margin: 0;
+  text-shadow: -3px 0 var(--cyan), 3px 2px var(--mag); }
+h2 { font: 600 13px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--yel); margin: 0 0 12px; }
+a { color: var(--cyan); }
+a:focus-visible { outline: 2px solid var(--yel); outline-offset: 2px; }
+.meta { font: 13px/1.4 var(--mono); color: var(--dim); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.tile { background: var(--panel); border: 1px solid var(--line); padding: 14px 16px; }
+.tile b { display: block; font: 400 clamp(34px, 7vw, 48px)/1.05 var(--display); font-variant-numeric: tabular-nums; }
+.tile span { font: 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--dim); }
+.tile small { display: block; margin-top: 6px; font: 12px/1.2 var(--mono); color: var(--cyan); min-height: 1.2em; }
+.chart { background: var(--panel); border: 1px solid var(--line); padding: 14px 16px; }
+.chart svg { display: block; width: 100%; height: 220px; }
+.chart p { margin: 0; color: var(--dim); font: 14px/1.5 var(--body); }
+.axis { display: flex; justify-content: space-between; font: 12px/1 var(--mono); color: var(--dim); margin-top: 8px; }
+.rows { display: grid; gap: 10px; }
+.row { display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; gap: 14px; align-items: center;
+  background: var(--panel); border: 1px solid var(--line); padding: 10px 14px 10px 10px; }
+.row img { width: 72px; height: 96px; object-fit: cover; background: #000; display: block; }
+.row .t { font-weight: 600; text-decoration: none; color: var(--fg); overflow-wrap: anywhere; }
+.row .t:hover { color: var(--cyan); }
+.row .d { font: 12px/1.4 var(--mono); color: var(--dim); }
+.nums { display: grid; grid-template-columns: repeat(3, auto); gap: 4px 18px; text-align: right; font-variant-numeric: tabular-nums; }
+.nums b { font: 400 26px/1 var(--display); }
+.nums span { font: 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--dim); }
+@media (max-width: 560px) { .row { grid-template-columns: 56px minmax(0, 1fr); } .row img { width: 56px; height: 75px; }
+  .nums { grid-column: 1 / -1; text-align: left; grid-template-columns: repeat(3, 1fr); } }
+footer { font: 12px/1.6 var(--mono); color: var(--dim); border-top: 1px solid var(--line); padding-top: 14px; }
+.err { color: var(--mag); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>GLITCH LORE</h1>
+    <div class="meta"><a id="chan" href="https://www.youtube.com/channel/UC6nhwZHGF1mn0Xar1Lgg6hQ">YouTube channel</a><br><span id="updated">Loading the latest reading…</span></div>
+  </header>
+
+  <section aria-label="Totals">
+    <div class="tiles">
+      <div class="tile"><span>Views</span><b id="views">–</b><small id="views-d"></small></div>
+      <div class="tile"><span>Subscribers</span><b id="subs">–</b><small id="subs-d"></small></div>
+      <div class="tile"><span>Likes</span><b id="likes">–</b><small></small></div>
+      <div class="tile"><span>Comments</span><b id="comments">–</b><small></small></div>
+      <div class="tile"><span>Shorts posted</span><b id="count">–</b><small></small></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Total views over time</h2>
+    <div class="chart" id="chart"><p>Waiting for readings.</p></div>
+  </section>
+
+  <section>
+    <h2>Shorts</h2>
+    <div class="rows" id="rows"></div>
+  </section>
+
+  <footer>Read-only. Public numbers from the YouTube Data API, read once an hour by a scheduled job; YouTube's own counts can lag by a few hours. Watch time and retention are not shown because YouTube only gives those to the signed-in channel owner.</footer>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 1 : 2) + "M" : n >= 1e4 ? (n / 1e3).toFixed(1) + "K" : n.toLocaleString("en-US");
+const ago = (iso) => { const m = Math.round((Date.now() - Date.parse(iso)) / 60000); return m < 1 ? "just now" : m < 60 ? m + " min ago" : m < 1440 ? Math.round(m / 60) + " h ago" : Math.round(m / 1440) + " d ago"; };
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+
+function delta(history, key, hours) {
+  const last = history[history.length - 1], cut = Date.parse(last.t) - hours * 3600e3;
+  const base = history.find((h) => Date.parse(h.t) >= cut);
+  if (!base || base === last) return "";
+  const d = last[key] - base[key];
+  return (d >= 0 ? "+" : "") + fmt(d) + " in 24 h";
+}
+
+function drawChart(history) {
+  const box = $("chart");
+  if (history.length < 2) { box.replaceChildren(el("p", null, "One reading so far. The line appears after the next hourly reading.")); return; }
+  const W = 900, H = 220, P = 6, t0 = Date.parse(history[0].t), t1 = Date.parse(history[history.length - 1].t);
+  const max = Math.max(1, ...history.map((h) => h.v));
+  const x = (t) => P + (W - 2 * P) * (Date.parse(t) - t0) / Math.max(1, t1 - t0), y = (v) => H - P - (H - 2 * P) * v / max;
+  const pts = history.map((h) => `${x(h.t).toFixed(1)},${y(h.v).toFixed(1)}`);
+  const ns = "http://www.w3.org/2000/svg", svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("preserveAspectRatio", "none"); svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", `Total views rose from ${history[0].v} to ${history[history.length - 1].v}`);
+  const mk = (tag, attrs) => { const e = document.createElementNS(ns, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); svg.appendChild(e); };
+  for (const f of [0.25, 0.5, 0.75]) mk("line", { x1: 0, x2: W, y1: y(max * f), y2: y(max * f), stroke: "#343868", "stroke-width": 1, "vector-effect": "non-scaling-stroke" });
+  mk("polygon", { points: `${P},${H - P} ${pts.join(" ")} ${W - P},${H - P}`, fill: "rgba(0,229,255,.14)" });
+  mk("polyline", { points: pts.join(" "), fill: "none", stroke: "#00e5ff", "stroke-width": 2.5, "vector-effect": "non-scaling-stroke", "stroke-linejoin": "round" });
+  const axis = el("div", "axis");
+  const day = (t) => new Date(t).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric" });
+  axis.append(el("span", null, day(history[0].t)), el("span", null, "peak " + fmt(max) + " views"), el("span", null, day(history[history.length - 1].t)));
+  box.replaceChildren(svg, axis);
+}
+
+function drawRows(videos) {
+  const rows = $("rows");
+  if (!videos.length) { rows.replaceChildren(el("p", "meta", "No Shorts posted yet.")); return; }
+  rows.replaceChildren(...videos.map((v) => {
+    const row = el("div", "row"), img = el("img"), mid = el("div"), nums = el("div", "nums");
+    img.src = v.thumb; img.alt = ""; img.loading = "lazy";
+    const a = el("a", "t", v.title); a.href = "https://youtube.com/shorts/" + encodeURIComponent(v.id); a.rel = "noopener";
+    mid.append(a, el("div", "d", "posted " + new Date(v.published).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) + " · " + ago(v.published)));
+    for (const [k, label] of [["views", "views"], ["likes", "likes"], ["comments", "comments"]]) { const c = el("div"); c.append(el("b", null, fmt(v[k])), el("br"), el("span", null, label)); nums.append(c); }
+    row.append(img, mid, nums);
+    return row;
+  }));
+}
+
+async function load() {
+  try {
+    const bust = "?t=" + Math.floor(Date.now() / 300000);
+    const [latest, history] = await Promise.all(["data/latest.json", "data/history.json"].map((u) => fetch(u + bust).then((r) => { if (!r.ok) throw new Error(u + " " + r.status); return r.json(); })));
+    $("views").textContent = fmt(latest.totals.views); $("subs").textContent = fmt(latest.channel.subscribers);
+    $("likes").textContent = fmt(latest.totals.likes); $("comments").textContent = fmt(latest.totals.comments); $("count").textContent = fmt(latest.totals.videos);
+    $("views-d").textContent = delta(history, "v", 24); $("subs-d").textContent = delta(history, "s", 24);
+    $("updated").textContent = "Last reading " + ago(latest.updated) + " · " + new Date(latest.updated).toLocaleString();
+    $("chan").href = latest.channel.url;
+    drawChart(history); drawRows(latest.videos);
+  } catch (e) {
+    $("updated").textContent = "Could not load the numbers (" + e.message + ").";
+    $("updated").className = "err";
+  }
+}
+load();
+</script>
+</body>
+</html>
