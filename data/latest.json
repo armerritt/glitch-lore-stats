@@ -1,25 +1,35 @@
 {
- "updated": "2026-11-16T17:03:16.287Z",
+ "updated": "2026-11-17T00:49:20.260Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
   "url": "https://www.youtube.com/channel/UC6nhwZHGF1mn0Xar1Lgg6hQ",
-  "subscribers": 0
+  "subscribers": 1
  },
  "totals": {
-  "views": 103,
-  "likes": 3,
+  "views": 113,
+  "likes": 4,
   "comments": 0,
-  "videos": 1
+  "videos": 2
  },
  "videos": [
+  {
+   "id": "cOW05kMMt8o",
+   "title": "The GTA 3 street you were never meant to find",
+   "published": "2026-11-16T20:00:29Z",
+   "thumb": "https://i.ytimg.com/vi/cOW05kMMt8o/mqdefault.jpg",
+   "duration": "PT57S",
+   "views": 8,
+   "likes": 1,
+   "comments": 0
+  },
   {
    "id": "dWM5L1Ylxq8",
    "title": "GTA only exists because of a broken police car",
    "published": "2026-11-15T19:41:04Z",
    "thumb": "https://i.ytimg.com/vi/dWM5L1Ylxq8/mqdefault.jpg",
    "duration": "PT1M3S",
-   "views": 103,
+   "views": 105,
    "likes": 3,
    "comments": 0
   }
