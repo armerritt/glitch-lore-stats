@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T01:14:01.208Z",
+ "updated": "2026-11-19T08:51:09.629Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
@@ -7,8 +7,8 @@
   "subscribers": 4
  },
  "totals": {
-  "views": 1386,
-  "likes": 26,
+  "views": 1611,
+  "likes": 33,
   "comments": 0,
   "videos": 4
  },
@@ -19,8 +19,8 @@
    "published": "2026-11-18T20:00:20Z",
    "thumb": "https://i.ytimg.com/vi/m_jPeOO21cQ/mqdefault.jpg",
    "duration": "PT1M1S",
-   "views": 125,
-   "likes": 3,
+   "views": 343,
+   "likes": 10,
    "comments": 0
   },
   {
@@ -29,7 +29,7 @@
    "published": "2026-11-17T20:00:10Z",
    "thumb": "https://i.ytimg.com/vi/CCf4xPgroZQ/mqdefault.jpg",
    "duration": "PT55S",
-   "views": 1130,
+   "views": 1132,
    "likes": 19,
    "comments": 0
   },
@@ -39,7 +39,7 @@
    "published": "2026-11-16T20:00:29Z",
    "thumb": "https://i.ytimg.com/vi/cOW05kMMt8o/mqdefault.jpg",
    "duration": "PT57S",
-   "views": 21,
+   "views": 28,
    "likes": 1,
    "comments": 0
   },
@@ -49,7 +49,7 @@
    "published": "2026-11-15T19:41:04Z",
    "thumb": "https://i.ytimg.com/vi/dWM5L1Ylxq8/mqdefault.jpg",
    "duration": "PT1M3S",
-   "views": 110,
+   "views": 108,
    "likes": 3,
    "comments": 0
   }
