@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T18:52:40.659Z",
+ "updated": "2026-11-19T01:14:01.208Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
@@ -7,19 +7,29 @@
   "subscribers": 4
  },
  "totals": {
-  "views": 1260,
-  "likes": 23,
+  "views": 1386,
+  "likes": 26,
   "comments": 0,
-  "videos": 3
+  "videos": 4
  },
  "videos": [
+  {
+   "id": "m_jPeOO21cQ",
+   "title": "Fighting game combos were never planned",
+   "published": "2026-11-18T20:00:20Z",
+   "thumb": "https://i.ytimg.com/vi/m_jPeOO21cQ/mqdefault.jpg",
+   "duration": "PT1M1S",
+   "views": 125,
+   "likes": 3,
+   "comments": 0
+  },
   {
    "id": "CCf4xPgroZQ",
    "title": "Minecraft's Creeper was supposed to be a pig",
    "published": "2026-11-17T20:00:10Z",
    "thumb": "https://i.ytimg.com/vi/CCf4xPgroZQ/mqdefault.jpg",
    "duration": "PT55S",
-   "views": 1129,
+   "views": 1130,
    "likes": 19,
    "comments": 0
   },
