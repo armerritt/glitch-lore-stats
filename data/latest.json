@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T17:49:26.533Z",
+ "updated": "2026-11-20T23:59:35.433Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
@@ -7,20 +7,30 @@
   "subscribers": 6
  },
  "totals": {
-  "views": 3666,
-  "likes": 96,
+  "views": 3730,
+  "likes": 101,
   "comments": 1,
-  "videos": 5
+  "videos": 6
  },
  "videos": [
+  {
+   "id": "KonI42udue8",
+   "title": "Rocket jumping was never meant to be in Quake",
+   "published": "2026-11-20T20:00:32Z",
+   "thumb": "https://i.ytimg.com/vi/KonI42udue8/mqdefault.jpg",
+   "duration": "PT59S",
+   "views": 46,
+   "likes": 5,
+   "comments": 0
+  },
   {
    "id": "n7Zsur9bXe0",
    "title": "Space Invaders speeds up because the machine was too slow",
    "published": "2026-11-19T20:00:01Z",
    "thumb": "https://i.ytimg.com/vi/n7Zsur9bXe0/mqdefault.jpg",
    "duration": "PT55S",
-   "views": 844,
-   "likes": 33,
+   "views": 847,
+   "likes": 34,
    "comments": 1
   },
   {
@@ -29,8 +39,8 @@
    "published": "2026-11-18T20:00:20Z",
    "thumb": "https://i.ytimg.com/vi/m_jPeOO21cQ/mqdefault.jpg",
    "duration": "PT1M1S",
-   "views": 1313,
-   "likes": 33,
+   "views": 1326,
+   "likes": 32,
    "comments": 0
   },
   {
@@ -39,7 +49,7 @@
    "published": "2026-11-17T20:00:10Z",
    "thumb": "https://i.ytimg.com/vi/CCf4xPgroZQ/mqdefault.jpg",
    "duration": "PT55S",
-   "views": 1361,
+   "views": 1362,
    "likes": 25,
    "comments": 0
   },
@@ -49,7 +59,7 @@
    "published": "2026-11-16T20:00:29Z",
    "thumb": "https://i.ytimg.com/vi/cOW05kMMt8o/mqdefault.jpg",
    "duration": "PT57S",
-   "views": 40,
+   "views": 41,
    "likes": 2,
    "comments": 0
   },
