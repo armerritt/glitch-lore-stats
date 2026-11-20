@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T18:18:30.770Z",
+ "updated": "2026-11-20T01:17:06.654Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
@@ -7,20 +7,30 @@
   "subscribers": 6
  },
  "totals": {
-  "views": 2085,
-  "likes": 47,
-  "comments": 0,
-  "videos": 4
+  "views": 2976,
+  "likes": 85,
+  "comments": 1,
+  "videos": 5
  },
  "videos": [
+  {
+   "id": "n7Zsur9bXe0",
+   "title": "Space Invaders speeds up because the machine was too slow",
+   "published": "2026-11-19T20:00:01Z",
+   "thumb": "https://i.ytimg.com/vi/n7Zsur9bXe0/mqdefault.jpg",
+   "duration": "PT55S",
+   "views": 576,
+   "likes": 34,
+   "comments": 1
+  },
   {
    "id": "m_jPeOO21cQ",
    "title": "Fighting game combos were never planned",
    "published": "2026-11-18T20:00:20Z",
    "thumb": "https://i.ytimg.com/vi/m_jPeOO21cQ/mqdefault.jpg",
    "duration": "PT1M1S",
-   "views": 792,
-   "likes": 17,
+   "views": 891,
+   "likes": 21,
    "comments": 0
   },
   {
@@ -29,7 +39,7 @@
    "published": "2026-11-17T20:00:10Z",
    "thumb": "https://i.ytimg.com/vi/CCf4xPgroZQ/mqdefault.jpg",
    "duration": "PT55S",
-   "views": 1155,
+   "views": 1361,
    "likes": 25,
    "comments": 0
   },
@@ -39,7 +49,7 @@
    "published": "2026-11-16T20:00:29Z",
    "thumb": "https://i.ytimg.com/vi/cOW05kMMt8o/mqdefault.jpg",
    "duration": "PT57S",
-   "views": 30,
+   "views": 40,
    "likes": 2,
    "comments": 0
   },
