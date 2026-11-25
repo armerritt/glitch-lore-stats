@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T15:54:09.453Z",
+ "updated": "2026-11-25T00:45:50.293Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
@@ -7,20 +7,30 @@
   "subscribers": 7
  },
  "totals": {
-  "views": 5387,
-  "likes": 167,
+  "views": 5740,
+  "likes": 176,
   "comments": 1,
-  "videos": 7
+  "videos": 8
  },
  "videos": [
+  {
+   "id": "UNGbiUjywf4",
+   "title": "Pokémon's most famous glitch is made from your name",
+   "published": "2026-11-24T20:00:29Z",
+   "thumb": "https://i.ytimg.com/vi/UNGbiUjywf4/mqdefault.jpg",
+   "duration": "PT57S",
+   "views": 193,
+   "likes": 2,
+   "comments": 0
+  },
   {
    "id": "Fm3V5yBCWyc",
    "title": "Devil May Cry's combat came from another game's bug",
    "published": "2026-11-22T20:00:01Z",
    "thumb": "https://i.ytimg.com/vi/Fm3V5yBCWyc/mqdefault.jpg",
    "duration": "PT55S",
-   "views": 789,
-   "likes": 32,
+   "views": 948,
+   "likes": 39,
    "comments": 0
   },
   {
@@ -29,7 +39,7 @@
    "published": "2026-11-20T20:00:32Z",
    "thumb": "https://i.ytimg.com/vi/KonI42udue8/mqdefault.jpg",
    "duration": "PT59S",
-   "views": 926,
+   "views": 927,
    "likes": 40,
    "comments": 0
   },
