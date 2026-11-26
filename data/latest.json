@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T12:37:03.370Z",
+ "updated": "2026-11-26T22:22:16.365Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
@@ -7,19 +7,29 @@
   "subscribers": 7
  },
  "totals": {
-  "views": 5861,
-  "likes": 177,
+  "views": 6052,
+  "likes": 179,
   "comments": 1,
-  "videos": 8
+  "videos": 9
  },
  "videos": [
+  {
+   "id": "YTKdDwNQBMM",
+   "title": "Civilization's nuclear Gandhi bug never existed",
+   "published": "2026-11-26T20:00:16Z",
+   "thumb": "https://i.ytimg.com/vi/YTKdDwNQBMM/mqdefault.jpg",
+   "duration": "PT59S",
+   "views": 124,
+   "likes": 2,
+   "comments": 0
+  },
   {
    "id": "UNGbiUjywf4",
    "title": "Pokémon's most famous glitch is made from your name",
    "published": "2026-11-24T20:00:29Z",
    "thumb": "https://i.ytimg.com/vi/UNGbiUjywf4/mqdefault.jpg",
    "duration": "PT57S",
-   "views": 303,
+   "views": 370,
    "likes": 3,
    "comments": 0
   },
