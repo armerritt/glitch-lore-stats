@@ -1,26 +1,36 @@
 {
- "updated": "2026-11-27T15:07:29.495Z",
+ "updated": "2026-11-27T23:28:12.737Z",
  "channel": {
   "title": "Glitch Lore",
   "handle": "@glitchlore-j3z",
   "url": "https://www.youtube.com/channel/UC6nhwZHGF1mn0Xar1Lgg6hQ",
-  "subscribers": 7
+  "subscribers": 9
  },
  "totals": {
-  "views": 6093,
-  "likes": 179,
+  "views": 6775,
+  "likes": 205,
   "comments": 1,
-  "videos": 9
+  "videos": 10
  },
  "videos": [
+  {
+   "id": "siRwcqPft9I",
+   "title": "Team Fortress's Spy started as a bug",
+   "published": "2026-11-27T20:00:27Z",
+   "thumb": "https://i.ytimg.com/vi/siRwcqPft9I/mqdefault.jpg",
+   "duration": "PT47S",
+   "views": 680,
+   "likes": 22,
+   "comments": 0
+  },
   {
    "id": "YTKdDwNQBMM",
    "title": "Civilization's nuclear Gandhi bug never existed",
    "published": "2026-11-26T20:00:16Z",
    "thumb": "https://i.ytimg.com/vi/YTKdDwNQBMM/mqdefault.jpg",
    "duration": "PT59S",
-   "views": 150,
-   "likes": 2,
+   "views": 151,
+   "likes": 3,
    "comments": 0
   },
   {
@@ -29,8 +39,8 @@
    "published": "2026-11-24T20:00:29Z",
    "thumb": "https://i.ytimg.com/vi/UNGbiUjywf4/mqdefault.jpg",
    "duration": "PT57S",
-   "views": 385,
-   "likes": 3,
+   "views": 386,
+   "likes": 4,
    "comments": 0
   },
   {
@@ -70,7 +80,7 @@
    "thumb": "https://i.ytimg.com/vi/m_jPeOO21cQ/mqdefault.jpg",
    "duration": "PT1M1S",
    "views": 1314,
-   "likes": 32,
+   "likes": 33,
    "comments": 0
   },
   {
@@ -80,7 +90,7 @@
    "thumb": "https://i.ytimg.com/vi/CCf4xPgroZQ/mqdefault.jpg",
    "duration": "PT55S",
    "views": 1362,
-   "likes": 24,
+   "likes": 25,
    "comments": 0
   },
   {
